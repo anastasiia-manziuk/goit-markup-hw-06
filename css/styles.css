@@ -29,13 +29,20 @@ img{
 }
 
 
-.container{
+/*.container{
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-}
+}*/
 
+
+.container{
+    width: 320px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
 
 
 /*---------HEADER------*/
@@ -211,7 +218,9 @@ img{
 
 /*---------Features------*/
 .features{
-    padding: 120px 0;
+    /*padding: 120px 0;*/
+    padding: 96px 0;
+    
 }
 
 .hidden-title {
@@ -230,15 +239,17 @@ img{
 
 .subsection-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
-.subsection-item{
+/*.subsection-item{
     width: calc((100% - 72px) / 4);
-}
+}*/
 
 .icon-box{
-    display: flex;
+    display: none;
+    /*display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
@@ -246,20 +257,22 @@ img{
     height: 112px;
     background-color: #F4F4FD;
     border: 1px solid #8E8F99;
-    margin-bottom: 8px;
+    margin-bottom: 8px;*/
 }
 
 
 .subsection-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
 }
 
 .text-section {
+    font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -272,7 +285,8 @@ img{
 
 .team {
     background-color: #F4F4FD;
-    padding: 120px 0;
+   /* padding: 120px 0;*/
+    padding-top: 96px;
 }
 
 .sub-title {
@@ -290,7 +304,9 @@ img{
 
 .list-items{
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+   /* gap: 24px;*/
+   gap: 72px;
 
 }
 
@@ -310,7 +326,7 @@ img{
 
 .photo-team{
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
+    /*width: calc((100% - 72px) / 4);*/
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 
@@ -907,6 +923,14 @@ img{
     position: absolute;
     opacity: 0;
     pointer-events: none;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0)
 }
 
 /*.text-checkbox {
@@ -1001,3 +1025,26 @@ img{
 
 
 /*---------MODAL-----*/
+
+
+
+@media screen and (min-width:768px){
+    .container{
+        width: 768px;
+        margin: 0 auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+}
+
+
+@media screen and (min-width:1158px) {
+    .container {
+        width: 1158px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
