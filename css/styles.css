@@ -608,7 +608,7 @@ img{
 
 
 .form-email-footer {
-    margin: 0 auto;
+    margin: 80px;
 }
 
 .text-media {}
@@ -903,8 +903,10 @@ img{
     margin-bottom: 24px;
 }
 
-.checkbox-form {
+.checkbox-form.visually-hidden{
+    position: absolute;
     opacity: 0;
+    pointer-events: none;
 }
 
 /*.text-checkbox {
