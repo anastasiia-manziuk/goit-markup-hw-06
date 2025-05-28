@@ -7,6 +7,12 @@ body{
 }
 
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 a{
     text-decoration: none;
 }
@@ -645,8 +651,8 @@ button{
 
 .footer{
         background-color: #2E2F42;
-            padding: 96px 0;
-            width: 100%;
+        padding: 96px 0;
+        min-width: 320px;
     
 }
 
@@ -705,7 +711,6 @@ button{
 
 
 .social-footer {
-    /*flex-direction: column;*/
 }
 
 .text-media{
@@ -762,12 +767,12 @@ button{
 .footer-input {
     border: 1px solid #fff;
     border-radius: 4px;
-    /*width: 264px;
-    height: 40px;*/
+
     width: 288px;
     height: 40px;
     background-color: transparent;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    opacity: 0.3;
     padding: 8px 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 12px;
@@ -844,6 +849,7 @@ button{
 
     width: 100%;
     height: 100%;
+    
 
 
     background-color: rgba(46, 47, 66, 0.4);
@@ -870,10 +876,8 @@ button{
 
     transform: translate(-50%, -50%);
 
-    /*width: 408px;
-    min-height: 584px;*/
-
-    max-width: 288px;
+    
+    min-width: 288px;
     max-height: 623px;
 
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 
@@ -882,8 +886,7 @@ button{
     background: #fcfcfc;
     border-radius: 4px;
     padding-top: 72px; 
-    /*padding-left: 24px;
-    padding-right: 24px;*/
+    
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 24px;
@@ -967,9 +970,7 @@ button{
 .input-form{
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    /*width: 360px;
-    height: 40px;
-    padding-left: 38px;*/
+    
     width: 256px;
     height: 40px;
     padding-left: 34px;
@@ -1009,19 +1010,12 @@ button{
     margin-bottom: 16px;
 }
 
-/*.label-comment{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.16;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-}*/
+
 
 .textarea-form{
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    /*width: 360px;
-    height: 120px;*/
+    
     width: 256px;
     height: 120px;
     padding: 8px 16px;
@@ -1072,17 +1066,7 @@ button{
     clip: rect(0, 0, 0, 0)
 }
 
-/*.text-checkbox {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    display: flex;
-    align-items: center;
-    
-}
-*/  
+
 
 
 .link-policy {
@@ -1130,7 +1114,7 @@ button{
 
 
 
-.checkbox-form:checked + .modal-label span{
+.checkbox-form:checked + .modal-label .modal-checkbox-icon{
     background-color: #404bbf;
     border: none;
     fill:#f4f4fd;
@@ -1349,6 +1333,9 @@ button{
     display: inline-block;
 }
 
+.social-footer{
+}
+
 .text-media{
     display: inline-block;
 }
@@ -1357,7 +1344,51 @@ button{
     flex-direction: row;
     gap: 24px;
 }
+
+.footer-input{
+    width: 264px;
+    margin-bottom: 0px;
+}
 /*---------FOOTER-----*/
+
+/*---------MODAL-----*/
+
+.modal{
+    width: 408px;
+    min-height: 584px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.input-form{
+    width: 360px;
+    height: 40px;
+    padding-left: 38px;
+}
+.label-comment {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    }
+
+.textarea-form{
+    width: 360px;
+    height: 120px;
+}
+
+.text-checkbox {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: flex;
+    align-items: center;
+
+}
+/*---------MODAL-----*/
 }
 
 
@@ -1488,6 +1519,8 @@ button{
 }
 
 .footer-section{
+    flex-wrap: nowrap;
+    gap: 0;
 
 }
 
@@ -1499,6 +1532,9 @@ button{
     margin-left: 80px;
 }
 /*---------FOOTER-----*/
+
+/*---------MODAL-----*/
+/*---------MODAL-----*/
         }
 
 
