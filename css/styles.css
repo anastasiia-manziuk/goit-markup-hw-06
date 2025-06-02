@@ -88,7 +88,7 @@ button{
 
 }
 
-.nav-item {}
+
 
 .contacts {
     display: none;
@@ -218,8 +218,8 @@ button{
     
 }
 
-.nav-mob-item {
-}
+
+
 
 .link-mob-nav {
     font-weight: 700;
@@ -275,11 +275,7 @@ button{
 
 
 
-.social-item {}
 
-.social-link {}
-
-.social-icon {}
 /*------menu-mob---*/
 
 
@@ -297,7 +293,7 @@ button{
     background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/bg-mob-1x-min.jpg);
-    /*box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);*/
+    
 }
 
 @media screen and (min-resolution:2x){
@@ -305,7 +301,7 @@ button{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/bg-mob-2x-min.jpg);
-            /*box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);*/
+            
     }
 
 }
@@ -707,8 +703,6 @@ button{
 
 
 
-.social-footer {
-}
 
 .text-media{
     display: block;
@@ -726,8 +720,7 @@ button{
 }
 
 
-.social-item.social-item-footer{
-}
+
 
 .social-link.link-footer{
     height: 100%;
@@ -759,7 +752,7 @@ button{
     /*gap: 24px;*/
 }
 
-.footer-email {}
+
 
 .footer-input {
     border: 1px solid #fff;
@@ -1119,9 +1112,6 @@ button{
 
 }
 
-.checkbox-text{
-
-}
 
 
 
@@ -1340,8 +1330,7 @@ button{
     display: inline-block;
 }
 
-.social-footer{
-}
+
 
 .text-media{
     display: inline-block;
