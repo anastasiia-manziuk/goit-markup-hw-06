@@ -1302,7 +1302,7 @@ button{
     /*---------Features------*/
 
     /*---------OUR TEAM------*/
-    .container.container-team{
+    .container-team{
         padding: 0 108px;
     }
     .list-items{
@@ -1493,9 +1493,7 @@ button{
 /*---------Features------*/
 
 /*---------OUR TEAM------*/
-    .container.container-team{
-        padding: 0;
-    }
+
 
     .team{
         padding: 120px 0;
