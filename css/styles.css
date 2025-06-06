@@ -1343,17 +1343,18 @@ button{
 
 .footer{
     min-width: 768px;
-    padding-left: 108px ;
+    
 }
 
 
 .footer-section{
+    padding-left: 108px;
     
     gap: 24px;
     row-gap: 72px;
     
     
-    align-items: baseline;
+    align-items: normal;
     justify-content: flex-start;
     
 }
@@ -1560,6 +1561,7 @@ button{
 }
 
 .footer-section{
+    padding-left: 15px;
     flex-wrap: nowrap;
     gap: 0;
 
